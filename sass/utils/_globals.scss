@@ -1,0 +1,120 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $main-text-color;
+  background-color: $main-site-background-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: 766px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+}
+
+.section {
+  @media screen and (max-width: 1600px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+  transform: translateY(0);
+  z-index: 1;
+}
+.relative-position {
+  position: relative;
+}
+.link-decoration {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  transition: color 250ms, background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  fill: #afb1b8;
+
+  &:hover {
+    border-radius: 50%;
+    background-color: $brand-color;
+    fill: $main-site-background-color;
+  }
+}
+.nav-border {
+  border-bottom: #ececec 1px solid;
+}

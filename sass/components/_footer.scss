@@ -1,0 +1,114 @@
+.footer {
+  background-color: $secondary-site-background-color;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+
+  & address {
+    font-style: normal;
+  }
+
+  &__positioning {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    &__positioning {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  &__brand-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: $main-site-background-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__location-link {
+    margin-top: 20px;
+    font-weight: 500;
+    color: $main-site-background-color;
+    text-decoration: none;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__contact-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__contact-link:hover,
+  &__contact-link:focus,
+  &__location-link:hover,
+  &__location-link:focus {
+    color: $brand-color;
+  }
+
+  &__social-block-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16em;
+  }
+  &__socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  &__social-li {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &__social-links {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #afb1b8;
+    transition: color 250ms, background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__social-links:focus,
+  &__social-links:hover {
+    color: $main-site-background-color;
+    background-color: $brand-color;
+  }
+  &__social-icons {
+    fill: currentColor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__positioning {
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

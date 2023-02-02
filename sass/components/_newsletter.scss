@@ -1,0 +1,77 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &__text {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__input {
+    padding: 15px 16px;
+    background-color: $secondary-site-background-color;
+    border: 1px #ffffff4d solid;
+    border-radius: 4px;
+    outline: 0;
+    color: $main-site-background-color;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    &__input {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__form {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    fill: $main-site-background-color;
+    display: inline-flex;
+    gap: 24px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    line-height: 1.87;
+    border-radius: 4px;
+    background-color: $brand-color;
+    color: $main-site-background-color;
+    padding: 10px 24px 10px 42px;
+    transition: background-color 250ms, color 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button:hover,
+  &__button use:hover {
+    background-color: $main-site-background-color;
+    color: $main-text-color;
+    fill: $main-text-color;
+    transition: background-color 250ms, color 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

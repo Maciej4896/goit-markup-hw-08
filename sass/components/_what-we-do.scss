@@ -1,0 +1,38 @@
+.what-we-do {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    & {
+      display: none;
+    }
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__label {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    z-index: 1;
+    color: $main-site-background-color;
+    background-color: #2f303acc;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}

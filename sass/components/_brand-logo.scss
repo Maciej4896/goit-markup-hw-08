@@ -1,0 +1,23 @@
+.brand-logo {
+  margin: 16px auto 16px 15px;
+  &,
+  & a:visited {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: currentColor;
+  }
+  &--secondary-color {
+    color: $brand-color;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .brand-logo {
+    margin-left: 215px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+}
