@@ -61,7 +61,7 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
   fill: $brand-color;
-  border-radius: 50%;
+  // border-radius: 50%;
 }
 
 @media (min-width: 768px) {
@@ -72,7 +72,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  // background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-container {
@@ -89,6 +89,7 @@
   overflow: scroll;
   display: flex;
   flex-direction: column;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
