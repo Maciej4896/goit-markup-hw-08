@@ -77,11 +77,11 @@
                   <use href="./images/icons.svg#icon-antenna-1" height="70px" width="70px"></use>
                 </svg>
               </div>
-              <h3 class="our-strenght__header">LOREM IPSUM</h3>
-              <p class="our-strenght__text">
+              <span class="our-strenght__header">LOREM IPSUM</span>
+              <span class="our-strenght__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
-              </p>
+              </span>
             </li>
             <li class="our-strenght__list-item">
               <div class="our-strenght__box">
@@ -89,11 +89,11 @@
                   <use href="./images/icons.svg#icon-clock-1" height="70px" width="70px"></use>
                 </svg>
               </div>
-              <h3 class="our-strenght__header">LOREM IPSUM</h3>
-              <p class="our-strenght__text">
+              <span class="our-strenght__header">LOREM IPSUM</span>
+              <span class="our-strenght__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
-              </p>
+              </span>
             </li>
             <li class="our-strenght__list-item">
               <div class="our-strenght__box">
@@ -101,11 +101,11 @@
                   <use href="./images/icons.svg#icon-diagram-1" height="70px" width="70px"></use>
                 </svg>
               </div>
-              <h3 class="our-strenght__header">LOREM IPSUM</h3>
-              <p class="our-strenght__text">
+              <span class="our-strenght__header">LOREM IPSUM</span>
+              <span class="our-strenght__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
-              </p>
+              </span>
             </li>
             <li class="our-strenght__list-item">
               <div class="our-strenght__box">
@@ -113,11 +113,11 @@
                   <use href="./images/icons.svg#icon-astronaut-1" height="70px" width="70px"></use>
                 </svg>
               </div>
-              <h3 class="our-strenght__header">LOREM IPSUM</h3>
-              <p class="our-strenght__text">
+              <span class="our-strenght__header">LOREM IPSUM</span>
+              <span class="our-strenght__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
-              </p>
+              </span>
             </li>
           </ul>
         </div>
@@ -134,7 +134,7 @@
                 width="370"
                 height="294"
               />
-              <p class="what-we-do__label">Aplikacje komputerowe</p>
+              <span class="what-we-do__label">Aplikacje komputerowe</span>
             </li>
             <li>
               <img
@@ -144,7 +144,7 @@
                 width="370"
                 height="294"
               />
-              <p class="what-we-do__label">Aplikacje mobilne</p>
+              <span class="what-we-do__label">Aplikacje mobilne</span>
             </li>
             <li>
               <img
@@ -154,7 +154,7 @@
                 width="370"
                 height="294"
               />
-              <p class="what-we-do__label">Rozwiązania graficzne</p>
+              <span class="what-we-do__label">Rozwiązania graficzne</span>
             </li>
           </ul>
         </div>
@@ -178,8 +178,8 @@
                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,"
               />
               <div class="our-team__card">
-                <h3 class="our-team__secondary-header">John Doe</h3>
-                <p class="our-team__description">Product Designer</p>
+                <span class="our-team__secondary-header">John Doe</span>
+                <span class="our-team__description">Product Designer</span>
                 <ul class="our-team__social-links">
                   <li>
                     <a href="#" class="link-decoration">
@@ -241,8 +241,8 @@
                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,"
               />
               <div class="our-team__card">
-                <h3 class="our-team__secondary-header">John Doe</h3>
-                <p class="our-team__description">Frontend Developer</p>
+                <span class="our-team__secondary-header">John Doe</span>
+                <span class="our-team__description">Frontend Developer</span>
                 <ul class="our-team__social-links">
                   <li>
                     <a href="#" class="link-decoration">
@@ -304,8 +304,8 @@
                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,"
               />
               <div class="our-team__card">
-                <h3 class="our-team__secondary-header">John Doe</h3>
-                <p class="our-team__description">Marketing</p>
+                <span class="our-team__secondary-header">John Doe</span>
+                <span class="our-team__description">Marketing</span>
                 <ul class="our-team__social-links">
                   <li>
                     <a href="#" class="link-decoration">
@@ -367,8 +367,8 @@
                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,"
               />
               <div class="our-team__card">
-                <h3 class="our-team__secondary-header">John Doe</h3>
-                <p class="our-team__description">UI Designer</p>
+                <span class="our-team__secondary-header">John Doe</span>
+                <span class="our-team__description">UI Designer</span>
                 <ul class="our-team__social-links">
                   <li>
                     <a href="#" class="link-decoration">
@@ -541,22 +541,25 @@
           </ul>
         </div>
         <div class="newsletter">
-          <p class="newsletter__text">Zapisz się do newslettera</p>
           <form class="newsletter__form">
-            <label>
+            <label for="newsletter"
+              ><span class="newsletter__text"> Zapisz się do newslettera</span>
+            </label>
+            <div class="newsletter__flex">
               <input
+                id="newsletter"
                 class="newsletter__input"
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
                 required
-            /></label>
-            <button class="newsletter__button" type="submit" name="newsletter-email">
-              Zapisz się
-              <svg width="24px" height="24px">
-                <use href="./images/icons.svg#icon-icon-send" width="24px" height="24px"></use>
-              </svg>
-            </button>
+              /><button class="newsletter__button" type="submit" name="newsletter-email">
+                Zapisz się
+                <svg width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send" width="24px" height="24px"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
